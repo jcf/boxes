@@ -1,0 +1,15 @@
+#!/bin/sh
+
+set -e
+
+BOXES=$HOME/Library/Boxes
+
+cd /tmp
+curl -Lo boxes.zip https://github.com/jcf/boxes/archive/master.zip
+mkdir -p $BOXES
+unzip boxes.zip -d $BOXES
+cd $BOXES
+
+type bundle >/dev/null 2>&1 || { gem install bundler --no-ri --no-rdoc }
+librarian-chef install
+./run
