@@ -3,7 +3,6 @@ description 'A box'
 
 run_list(
   'recipe[build-essential]',
-  'recipe[git]',
   'recipe[ruby_build]',
   'recipe[rbenv::user]',
   # 'recipe[users]',

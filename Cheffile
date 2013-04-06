@@ -1,5 +1,16 @@
 site 'http://community.opscode.com/api/v1'
 
+cookbook 'build-essential', '~> 1.3'
+
 cookbook 'dmg', '~> 1.1'
 cookbook 'homebrew', '~> 1.3'
 cookbook 'mac_os_x', '~> 1.4'
+
+cookbook 'git', '~> 2.3'
+cookbook 'ruby_build', '~> 0.7'
+cookbook 'rbenv',
+  git: 'git://github.com/fnichol/chef-rbenv.git'
+
+cookbook 'iterm2'
+cookbook 'virtualbox'
+cookbook '1password'

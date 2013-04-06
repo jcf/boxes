@@ -1,7 +1,7 @@
 {
   "id": "box",
 
-  "brew_packages": {
+  "packages": {
     "ack": "",
     "coreutils": "",
     "couchdb": "",

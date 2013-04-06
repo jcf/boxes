@@ -6,7 +6,7 @@
   "shell": "/bin/zsh",
 
   "groups": [
-    "jcf"
+    "jcf",
     "wheel",
     "sysadmin",
     "dialout",

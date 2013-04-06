@@ -1,0 +1,9 @@
+{
+  "hostname": "jmbp",
+
+  "run_list": [
+    "role[base]",
+    "role[osx]",
+    "role[box]"
+  ]
+}
