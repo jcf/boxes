@@ -4,7 +4,6 @@ set -e
 
 BOXES=$HOME/Library/Boxes
 
-sudo sed -i.bak -E 's/^(%admin.*) ALL/\\1 NOPASSWD: ALL/' /etc/sudoers
 sudo xcode-select -switch /Applications/Xcode.app/Contents/Developer
 
 cd /tmp
