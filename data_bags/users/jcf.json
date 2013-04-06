@@ -1,0 +1,36 @@
+{
+  "comment": "James Conroy-Finn",
+  "ssh_keys": "SSH public key(s)",
+  "id": "jcf",
+  "uid": 1000,
+  "shell": "/bin/zsh",
+
+  "groups": [
+    "jcf"
+    "wheel",
+    "sysadmin",
+    "dialout",
+    "cdrom",
+    "floppy",
+    "audio",
+    "video",
+    "plugdev",
+    "sambashare",
+    "sbuild"
+  ],
+
+  "repos": {
+    ".dotfiles": {
+      "repo": "git@github.com:jcf/dotfiles.git",
+      "revision": "HEAD"
+    },
+    ".rbenv": {
+      "repo": "git://github.com/sstephenson/rbenv.git",
+      "revision": "HEAD"
+    },
+    ".rbenv/plugins/ruby-build": {
+      "repo": "git://github.com/sstephenson/ruby-build.git",
+      "revision": "HEAD"
+    }
+  }
+}

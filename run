@@ -1,0 +1,2 @@
+#!/bin/sh
+chef-solo -c ./config/solo.rb

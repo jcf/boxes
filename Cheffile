@@ -1,0 +1,5 @@
+site 'http://community.opscode.com/api/v1'
+
+cookbook 'dmg', '~> 1.1'
+cookbook 'homebrew', '~> 1.3'
+cookbook 'mac_os_x', '~> 1.4'
