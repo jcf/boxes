@@ -1,0 +1,36 @@
+#!/bin/sh
+
+set -e
+
+BOXES="/Library/Boxes"
+SCRIPT_URL="https://github.com/jcf/boxes/archive/master.zip"
+
+info() {
+  echo "\033[36m=>\033[0m $@"
+}
+
+fail() {
+  echo "\033[31m=>\033[0m $@. Exiting." >&2
+  exit 1
+}
+
+success() {
+  echo "\033[32m=>\033[0m $@"
+}
+
+# Require command line tools
+type gcc >/dev/null 2>&1 || { fail "Command line tools not installed."; }
+
+# Install chef
+if [ ! type knife >/dev/null 2>&1 ]; then
+  info "Installing chef..."
+  sudo true && curl -L https://www.opscode.com/chef/install.sh | sudo bash
+fi
+
+# Download boxes and move it in to place
+if [ ! -d $BOXES ]; then
+  curl -sLo /tmp/boxes.zip $SCRIPT_URL
+  unzip -qqo /tmp/boxes.zip -d $BOXES
+fi
+
+success "Boxes installed successfully. You'll find everything in $BOXES"
