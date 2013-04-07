@@ -6,11 +6,11 @@ run_list(
   'recipe[ruby_build]',
   'recipe[rbenv::user]',
   # 'recipe[users]',
-  'recipe[box]',
+  'recipe[box]')
   # 'recipe[mac_os_x::settings]',
   # 'recipe[mac_os_x::firewall]',
 
-  'recipe[iterm2]',
-  'recipe[virtualbox]',
+  # 'recipe[iterm2]',
+  # 'recipe[virtualbox]',
   # 'recipe[ghmac]',
-  'recipe[1password]')
+  # 'recipe[1password]')
