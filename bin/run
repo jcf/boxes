@@ -3,4 +3,4 @@ set -e
 type bundle >/dev/null 2>&1 || { gem install bundler --no-ri --no-rdoc }
 bundle install
 librarian-chef install
-chef-solo -c ./config/solo.rb
+chef-solo -c ./config/solo.rb -j config/box.json
