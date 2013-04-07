@@ -1,0 +1,5 @@
+#!/bin/sh
+set -e
+type bundle >/dev/null 2>&1 || { gem install bundler --no-ri --no-rdoc; }
+bundle install
+librarian-chef install
