@@ -3,8 +3,8 @@ description 'A box'
 
 run_list(
   'recipe[build-essential]',
-  'recipe[ruby_build]',
-  'recipe[rbenv::user]',
+  # 'recipe[ruby_build]',
+  # 'recipe[rbenv::user]',
   # 'recipe[users]',
   'recipe[box]')
   # 'recipe[mac_os_x::settings]',
