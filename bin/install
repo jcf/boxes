@@ -2,7 +2,7 @@
 
 set -e
 
-BOXES="/Library/Boxes"
+BOXES="$HOME/Library/Boxes"
 SCRIPT_URL="https://github.com/jcf/boxes/archive/master.zip"
 
 info() {
