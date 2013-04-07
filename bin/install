@@ -18,6 +18,8 @@ success() {
   echo "\033[32m=>\033[0m $@"
 }
 
+fail "This script is a NOOP right now."
+
 # Require command line tools
 type gcc >/dev/null 2>&1 || { fail "Command line tools not installed."; }
 
